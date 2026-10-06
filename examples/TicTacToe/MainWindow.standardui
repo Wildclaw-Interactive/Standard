@@ -1,0 +1,155 @@
+Interface MainWindow:
+    Title "Tic Tac Toe - Standard"
+    Size 520 by 650
+    Background "#15171C"
+
+    Card app_card:
+        Position 28 by 24
+        Size 464 by 590
+        Background "#20242B"
+        Foreground "#343A44"
+        Corner radius 18
+    End
+
+    Text title_text:
+        Text "Tic Tac Toe"
+        Position 64 by 52
+        Size 390 by 48
+        Font size 32
+        Foreground "#F3F7F4"
+    End
+
+    Text subtitle_text:
+        Text "Made entirely with Standard + Standard UI"
+        Position 64 by 100
+        Size 390 by 30
+        Font size 14
+        Foreground "#96A19B"
+    End
+
+    Text status_text:
+        Text "X's turn"
+        Position 64 by 145
+        Size 390 by 36
+        Font size 19
+        Foreground "#78F28B"
+    End
+
+    Card board_card:
+        Position 64 by 195
+        Size 390 by 390
+        Background "#181B20"
+        Foreground "#343A44"
+        Corner radius 14
+    End
+
+    Button cell_1:
+        Text ""
+        Position 82 by 213
+        Size 110 by 110
+        Font size 40
+        Background "#292E36"
+        Foreground "#78F28B"
+        Corner radius 10
+        On click Cell1
+    End
+
+    Button cell_2:
+        Text ""
+        Position 205 by 213
+        Size 110 by 110
+        Font size 40
+        Background "#292E36"
+        Foreground "#78F28B"
+        Corner radius 10
+        On click Cell2
+    End
+
+    Button cell_3:
+        Text ""
+        Position 328 by 213
+        Size 110 by 110
+        Font size 40
+        Background "#292E36"
+        Foreground "#78F28B"
+        Corner radius 10
+        On click Cell3
+    End
+
+    Button cell_4:
+        Text ""
+        Position 82 by 336
+        Size 110 by 110
+        Font size 40
+        Background "#292E36"
+        Foreground "#78F28B"
+        Corner radius 10
+        On click Cell4
+    End
+
+    Button cell_5:
+        Text ""
+        Position 205 by 336
+        Size 110 by 110
+        Font size 40
+        Background "#292E36"
+        Foreground "#78F28B"
+        Corner radius 10
+        On click Cell5
+    End
+
+    Button cell_6:
+        Text ""
+        Position 328 by 336
+        Size 110 by 110
+        Font size 40
+        Background "#292E36"
+        Foreground "#78F28B"
+        Corner radius 10
+        On click Cell6
+    End
+
+    Button cell_7:
+        Text ""
+        Position 82 by 459
+        Size 110 by 110
+        Font size 40
+        Background "#292E36"
+        Foreground "#78F28B"
+        Corner radius 10
+        On click Cell7
+    End
+
+    Button cell_8:
+        Text ""
+        Position 205 by 459
+        Size 110 by 110
+        Font size 40
+        Background "#292E36"
+        Foreground "#78F28B"
+        Corner radius 10
+        On click Cell8
+    End
+
+    Button cell_9:
+        Text ""
+        Position 328 by 459
+        Size 110 by 110
+        Font size 40
+        Background "#292E36"
+        Foreground "#78F28B"
+        Corner radius 10
+        On click Cell9
+    End
+
+    Button reset_button:
+        Text "New game"
+        Position 179 by 594
+        Size 162 by 42
+        Font size 14
+        Background "#245A38"
+        Foreground "#F3FFF5"
+        Corner radius 9
+        On click ResetGame
+    End
+End

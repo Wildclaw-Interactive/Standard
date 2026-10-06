@@ -1,0 +1,13 @@
+Set name to "World"
+Set score to 8
+
+Print "Hello " + name to console
+
+If score is at least 10:
+    Print "High score!" to console
+Else:
+    Print "Keep going." to console
+End
+
+Set doubled_score to score multiplied by 2
+Print doubled_score to console

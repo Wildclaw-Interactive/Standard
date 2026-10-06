@@ -1,0 +1,9 @@
+items = ["one", "two"]
+Add "three" to items
+
+amount = count of items
+Print "There are {amount} items" to console
+
+For each item in items:
+    Print item to console
+End

@@ -1,0 +1,16 @@
+Note: Natural function grammar and compact call syntax can coexist.
+
+Function Add left and right:
+    Return left plus right
+End
+
+Function Damage target by amount:
+    Return target minus amount
+End
+
+health = 100
+health = Damage health by 25
+sum = Add(10, 20)
+
+Print "Health: {health}" to console
+Print "Sum: {sum}" to console

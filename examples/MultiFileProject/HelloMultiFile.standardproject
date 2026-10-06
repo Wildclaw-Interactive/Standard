@@ -1,0 +1,5 @@
+Project "Hello Multi File":
+    Version "0.1.0"
+    Entry "Main.standard"
+    Target Console
+End

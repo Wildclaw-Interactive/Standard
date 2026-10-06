@@ -1,0 +1,4 @@
+Note: This function is automatically visible to other files in this project.
+Function Greet person:
+    Print "Hello {person} from another Standard file!" to console
+End

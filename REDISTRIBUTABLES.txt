@@ -1,0 +1,27 @@
+STANDARD REDISTRIBUTABLE COMPONENTS
+Applies to Standard 0.1.0-alpha
+
+The following may be redistributed under Section 4 of LICENSE.txt:
+
+1. COMPILED OUTPUT GENERATED FOR YOUR APPLICATION
+   You may redistribute executable/object code produced by the Standard compiler for your own application, including Standard-generated helper/runtime code embedded into that compiled output.
+
+2. STANDARD-OWNED RUNTIME BINARIES EXPRESSLY MARKED "REDISTRIBUTABLE"
+   There are currently no separate Standard-owned runtime DLLs that must be installed globally for Standard 0.1.0-alpha.
+
+   If a future release ships a Standard-owned runtime binary intended for application deployment, its exact filename will be listed in this file.
+
+NOT REDISTRIBUTABLE AS PART OF THIS PERMISSION:
+
+- Standard Studio
+- Standard Studio installer or complete application folder
+- Standard compiler
+- standard.exe / Standard CLI as a development tool
+- Standard SDK/toolchain package
+- official Standard release ZIPs or installers
+- private Standard source code
+- official logos/icons except where embedded in the unmodified Standard Software itself
+
+THIRD-PARTY COMPONENTS
+
+Generated or published applications may contain .NET, Avalonia, or other third-party components. Those components are governed by their own licenses, not by this file. Preserve all notices required by those licenses.

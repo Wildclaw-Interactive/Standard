@@ -1,0 +1,38 @@
+Note: Standard language showcase
+
+names = ["Ada", "Grace"]
+Add "Linus" to names
+
+Function Greet person:
+    Print "Hello {person}!" to console
+End
+
+For each name in names:
+    Greet name
+End
+
+score = random number from 1 to 10
+Print "Random score: {score}" to console
+
+If score is at least 8:
+    Print "Great roll" to console
+Else if score is at least 5:
+    Print "Not bad" to console
+Otherwise:
+    Print "Oof" to console
+End
+
+Function Damage target by amount:
+    target = target minus amount
+    Return target
+End
+
+health = 100
+health = Damage health by 20
+Print "Health: {health}" to console
+
+Repeat 3 times:
+    Increase score by 1
+End
+
+Print "Final score: {score}" to console

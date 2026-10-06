@@ -1,0 +1,217 @@
+Note: Tic Tac Toe written entirely in Standard.
+Note: The two variables below are captured by the UI event functions.
+
+current_player = "X"
+game_over = false
+
+Function Cell1:
+    If game_over is false:
+        value = text of control cell_1
+        If value is "":
+            Set text of control cell_1 to current_player
+            Disable control cell_1
+            CheckGame
+        End
+    End
+End
+
+Function Cell2:
+    If game_over is false:
+        value = text of control cell_2
+        If value is "":
+            Set text of control cell_2 to current_player
+            Disable control cell_2
+            CheckGame
+        End
+    End
+End
+
+Function Cell3:
+    If game_over is false:
+        value = text of control cell_3
+        If value is "":
+            Set text of control cell_3 to current_player
+            Disable control cell_3
+            CheckGame
+        End
+    End
+End
+
+Function Cell4:
+    If game_over is false:
+        value = text of control cell_4
+        If value is "":
+            Set text of control cell_4 to current_player
+            Disable control cell_4
+            CheckGame
+        End
+    End
+End
+
+Function Cell5:
+    If game_over is false:
+        value = text of control cell_5
+        If value is "":
+            Set text of control cell_5 to current_player
+            Disable control cell_5
+            CheckGame
+        End
+    End
+End
+
+Function Cell6:
+    If game_over is false:
+        value = text of control cell_6
+        If value is "":
+            Set text of control cell_6 to current_player
+            Disable control cell_6
+            CheckGame
+        End
+    End
+End
+
+Function Cell7:
+    If game_over is false:
+        value = text of control cell_7
+        If value is "":
+            Set text of control cell_7 to current_player
+            Disable control cell_7
+            CheckGame
+        End
+    End
+End
+
+Function Cell8:
+    If game_over is false:
+        value = text of control cell_8
+        If value is "":
+            Set text of control cell_8 to current_player
+            Disable control cell_8
+            CheckGame
+        End
+    End
+End
+
+Function Cell9:
+    If game_over is false:
+        value = text of control cell_9
+        If value is "":
+            Set text of control cell_9 to current_player
+            Disable control cell_9
+            CheckGame
+        End
+    End
+End
+
+Function CheckGame:
+    c1 = text of control cell_1
+    c2 = text of control cell_2
+    c3 = text of control cell_3
+    c4 = text of control cell_4
+    c5 = text of control cell_5
+    c6 = text of control cell_6
+    c7 = text of control cell_7
+    c8 = text of control cell_8
+    c9 = text of control cell_9
+
+    If c1 is not "" and c1 is c2 and c2 is c3:
+        Win c1
+        Return
+    End
+
+    If c4 is not "" and c4 is c5 and c5 is c6:
+        Win c4
+        Return
+    End
+
+    If c7 is not "" and c7 is c8 and c8 is c9:
+        Win c7
+        Return
+    End
+
+    If c1 is not "" and c1 is c4 and c4 is c7:
+        Win c1
+        Return
+    End
+
+    If c2 is not "" and c2 is c5 and c5 is c8:
+        Win c2
+        Return
+    End
+
+    If c3 is not "" and c3 is c6 and c6 is c9:
+        Win c3
+        Return
+    End
+
+    If c1 is not "" and c1 is c5 and c5 is c9:
+        Win c1
+        Return
+    End
+
+    If c3 is not "" and c3 is c5 and c5 is c7:
+        Win c3
+        Return
+    End
+
+    If c1 is not "" and c2 is not "" and c3 is not "" and c4 is not "" and c5 is not "" and c6 is not "" and c7 is not "" and c8 is not "" and c9 is not "":
+        game_over = true
+        Set text of control status_text to "Draw game!"
+        Return
+    End
+
+    SwitchPlayer
+End
+
+Function Win player:
+    game_over = true
+    Set text of control status_text to "{player} wins!"
+    Disable control cell_1
+    Disable control cell_2
+    Disable control cell_3
+    Disable control cell_4
+    Disable control cell_5
+    Disable control cell_6
+    Disable control cell_7
+    Disable control cell_8
+    Disable control cell_9
+End
+
+Function SwitchPlayer:
+    If current_player is "X":
+        current_player = "O"
+    Otherwise:
+        current_player = "X"
+    End
+
+    Set text of control status_text to "{current_player}'s turn"
+End
+
+Function ResetGame:
+    current_player = "X"
+    game_over = false
+
+    Set text of control cell_1 to ""
+    Set text of control cell_2 to ""
+    Set text of control cell_3 to ""
+    Set text of control cell_4 to ""
+    Set text of control cell_5 to ""
+    Set text of control cell_6 to ""
+    Set text of control cell_7 to ""
+    Set text of control cell_8 to ""
+    Set text of control cell_9 to ""
+
+    Enable control cell_1
+    Enable control cell_2
+    Enable control cell_3
+    Enable control cell_4
+    Enable control cell_5
+    Enable control cell_6
+    Enable control cell_7
+    Enable control cell_8
+    Enable control cell_9
+
+    Set text of control status_text to "X's turn"
+End
+
+Show interface "MainWindow.standardui"

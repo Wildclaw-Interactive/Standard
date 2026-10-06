@@ -1,0 +1,136 @@
+Interface AdvancedControls:
+    Title "Standard UI Controls"
+    Size 1100 by 720
+    Background "#17191F"
+
+    Text heading:
+        Text "Standard UI"
+        Position 28 by 22
+        Size 420 by 42
+        Font size 28
+        Foreground "#F0F3F7"
+    End
+
+    Text status:
+        Text "Change a control to see Standard events run."
+        Position 30 by 68
+        Size 650 by 32
+        Font size 14
+        Foreground "#AAB2BE"
+    End
+
+    Dropdown difficulty:
+        Placeholder "Choose difficulty"
+        Position 30 by 118
+        Size 230 by 40
+        Items "Easy" and "Normal" and "Hard"
+        Selected "Normal"
+        On changed DifficultyChanged
+    End
+
+    Number input lives:
+        Position 280 by 118
+        Size 130 by 40
+        Minimum 1
+        Maximum 99
+        Value 3
+        Step 1
+        On changed LivesChanged
+    End
+
+    Password input secret:
+        Placeholder "Secret code"
+        Position 430 by 118
+        Size 220 by 40
+        On changed SecretChanged
+    End
+
+    Switch notifications:
+        Text "Notifications"
+        Position 30 by 184
+        Size 210 by 38
+        Checked true
+        On changed NotificationsChanged
+    End
+
+    Radio button theme_light:
+        Text "Light theme"
+        Position 280 by 184
+        Size 145 by 34
+        Group "theme"
+        Checked true
+        On changed ThemeChanged
+    End
+
+    Radio button theme_dark:
+        Text "Dark theme"
+        Position 430 by 184
+        Size 145 by 34
+        Group "theme"
+        On changed ThemeChanged
+    End
+
+    List servers:
+        Position 30 by 252
+        Size 280 by 150
+        Items "North" and "East" and "West"
+        Selected 0
+        On changed ServerChanged
+    End
+
+    Date picker event_date:
+        Position 330 by 252
+        Size 220 by 40
+        Selected "2026-10-06"
+        On changed DateChanged
+    End
+
+    Time picker event_time:
+        Position 330 by 310
+        Size 220 by 40
+        Selected "19:30"
+        On changed TimeChanged
+    End
+
+    Button add_server:
+        Text "Add server"
+        Position 330 by 368
+        Size 130 by 40
+        On click AddServer
+    End
+
+    Button reset_servers:
+        Text "Reset list"
+        Position 474 by 368
+        Size 130 by 40
+        On click ResetServers
+    End
+
+    Browser web:
+        Position 680 by 118
+        Size 390 by 470
+        Address "https://example.com"
+        On navigated BrowserNavigated
+    End
+
+    Button docs_button:
+        Text "Open Avalonia"
+        Position 680 by 610
+        Size 150 by 40
+        On click OpenAvalonia
+    End
+
+    Button back_button:
+        Text "Back"
+        Position 844 by 610
+        Size 100 by 40
+        On click BrowserBack
+    End
+
+    Button refresh_button:
+        Text "Refresh"
+        Position 956 by 610
+        Size 110 by 40
+        On click BrowserRefresh
+    End
+End

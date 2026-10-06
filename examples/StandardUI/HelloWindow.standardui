@@ -1,0 +1,46 @@
+Interface HelloWindow:
+    Title "Hello Standard UI"
+    Size 760 by 480
+    Background "#17191F"
+
+    Card card:
+        Position 28 by 28
+        Size 520 by 260
+        Background "#20242B"
+        Foreground "#343A44"
+        Corner radius 12
+    End
+
+    Text heading:
+        Text "Standard UI"
+        Position 52 by 48
+        Size 320 by 42
+        Font size 27
+        Foreground "#F0F3F7"
+    End
+
+    Input name_input:
+        Placeholder "Your name"
+        Position 52 by 112
+        Size 250 by 38
+        Font size 14
+        Corner radius 7
+    End
+
+    Button greet_button:
+        Text "Say hello"
+        Position 52 by 170
+        Size 138 by 40
+        Font size 14
+        Background "#245A38"
+        Corner radius 7
+        On click Greet
+    End
+
+    Text greeting:
+        Text "Ready."
+        Position 52 by 224
+        Size 400 by 32
+        Font size 16
+    End
+End

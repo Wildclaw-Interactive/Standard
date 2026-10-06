@@ -1,0 +1,5 @@
+Project "Tic Tac Toe":
+    Version "0.1.0"
+    Entry "MainWindow.standard"
+    Target Desktop
+End

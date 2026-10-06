@@ -1,0 +1,118 @@
+Interface ControlsShowcase:
+    Title "Standard UI"
+    Size 1100 by 700
+    Background "#17191F"
+
+    Text heading:
+        Text "Standard UI"
+        Position 32 by 24
+        Size 360 by 42
+        Font size 28
+    End
+
+    Dropdown difficulty:
+        Placeholder "Choose difficulty"
+        Position 32 by 88
+        Size 240 by 40
+        Items "Easy" and "Normal" and "Hard"
+        Selected "Normal"
+        On changed DifficultyChanged
+    End
+
+    List destinations:
+        Position 32 by 146
+        Size 240 by 120
+        Items "Avalonia" and "Standard" and "Example"
+        Selected 0
+        On changed DestinationChanged
+    End
+
+    Password input password:
+        Placeholder "Password"
+        Position 32 by 286
+        Size 240 by 40
+        On changed PasswordChanged
+    End
+
+    Radio button light_theme:
+        Text "Light"
+        Group "theme"
+        Position 32 by 346
+        Size 105 by 32
+    End
+
+    Radio button dark_theme:
+        Text "Dark"
+        Group "theme"
+        Position 145 by 346
+        Size 105 by 32
+        Checked true
+    End
+
+    Switch notifications:
+        Text "Notifications"
+        Position 32 by 394
+        Size 220 by 38
+        Checked true
+        On changed NotificationsChanged
+    End
+
+    Number input quantity:
+        Position 32 by 452
+        Size 150 by 40
+        Minimum 0
+        Maximum 100
+        Value 10
+        Step 5
+        On changed QuantityChanged
+    End
+
+    Date picker date:
+        Position 32 by 510
+        Size 220 by 40
+        Selected "2026-10-06"
+        On changed DateChanged
+    End
+
+    Time picker time:
+        Position 32 by 568
+        Size 220 by 40
+        Selected "14:30"
+        On changed TimeChanged
+    End
+
+    Text status:
+        Text "Ready"
+        Position 32 by 630
+        Size 420 by 32
+        Font size 15
+    End
+
+    Input address:
+        Text "https://example.com"
+        Placeholder "Website address"
+        Position 320 by 24
+        Size 560 by 40
+    End
+
+    Button navigate:
+        Text "Go"
+        Position 894 by 24
+        Size 70 by 40
+        On click Navigate
+    End
+
+    Button back:
+        Text "Back"
+        Position 976 by 24
+        Size 82 by 40
+        On click GoBack
+    End
+
+    Browser web:
+        Position 320 by 88
+        Size 738 by 520
+        Address "https://example.com"
+        On navigated BrowserNavigated
+    End
+End

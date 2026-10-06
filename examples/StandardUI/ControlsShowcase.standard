@@ -1,0 +1,60 @@
+Show interface "ControlsShowcase.standardui"
+
+Function Navigate:
+    address = text of control address
+    Navigate browser web to address
+End
+
+Function GoBack:
+    Go back in browser web
+End
+
+Function DifficultyChanged:
+    difficulty = selected item of control difficulty
+    Set text of control status to "Difficulty: {difficulty}"
+End
+
+Function DestinationChanged:
+    destination = selected item of control destinations
+
+    If destination is "Avalonia":
+        Navigate browser web to "https://avaloniaui.net"
+    Otherwise:
+        If destination is "Standard":
+            Navigate browser web to "https://example.com"
+        Otherwise:
+            Navigate browser web to "https://example.org"
+        End
+    End
+End
+
+Function PasswordChanged:
+    password = text of control password
+    length = length of password
+    Set text of control status to "Password length: {length}"
+End
+
+Function NotificationsChanged:
+    enabled = control notifications is checked
+    Set text of control status to "Notifications enabled: {enabled}"
+End
+
+Function QuantityChanged:
+    quantity = value of control quantity
+    Set text of control status to "Quantity: {quantity}"
+End
+
+Function DateChanged:
+    date = selected item of control date
+    Set text of control status to "Date: {date}"
+End
+
+Function TimeChanged:
+    time = selected item of control time
+    Set text of control status to "Time: {time}"
+End
+
+Function BrowserNavigated:
+    address = address of browser web
+    Set text of control status to "Loaded: {address}"
+End

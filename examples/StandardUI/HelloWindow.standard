@@ -1,0 +1,8 @@
+Note: Standard backend for HelloWindow.standardui
+
+Function Greet:
+    name = text of control name_input
+    Set text of control greeting to "Hello {name}!"
+End
+
+Show interface "HelloWindow.standardui"

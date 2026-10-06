@@ -1,0 +1,77 @@
+Note: Standard backend for AdvancedControls.standardui
+
+Function DifficultyChanged:
+    choice = selected item of control difficulty
+    Set text of control status to "Difficulty: {choice}"
+End
+
+Function LivesChanged:
+    count = value of control lives
+    Set text of control status to "Lives: {count}"
+End
+
+Function SecretChanged:
+    secret_text = text of control secret
+    secret_length = length of secret_text
+    Set text of control status to "Secret length: {secret_length}"
+End
+
+Function NotificationsChanged:
+    enabled = control notifications is checked
+    Set text of control status to "Notifications enabled: {enabled}"
+End
+
+Function ThemeChanged:
+    dark = control theme_dark is checked
+    If dark is true:
+        Set text of control status to "Dark theme selected"
+    Otherwise:
+        Set text of control status to "Light theme selected"
+    End
+End
+
+Function ServerChanged:
+    server = selected item of control servers
+    Set text of control status to "Server: {server}"
+End
+
+Function DateChanged:
+    date = selected item of control event_date
+    Set text of control status to "Date: {date}"
+End
+
+Function TimeChanged:
+    time = selected item of control event_time
+    Set text of control status to "Time: {time}"
+End
+
+Function AddServer:
+    Add "Central" to control servers
+    count = number of items in control servers
+    Set text of control status to "Servers: {count}"
+End
+
+Function ResetServers:
+    Set items of control servers to ["North", "East", "West"]
+    Set selected index of control servers to 0
+    Set text of control status to "Server list reset"
+End
+
+Function BrowserNavigated:
+    current = address of browser web
+    Set text of control status to "Browser: {current}"
+End
+
+Function OpenAvalonia:
+    Navigate browser web to "https://avaloniaui.net"
+End
+
+Function BrowserBack:
+    Go back in browser web
+End
+
+Function BrowserRefresh:
+    Refresh browser web
+End
+
+Show interface "AdvancedControls.standardui"

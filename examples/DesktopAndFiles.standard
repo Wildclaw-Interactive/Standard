@@ -1,0 +1,24 @@
+Note: Standard desktop and file helper showcase
+
+Prompt "Welcome to Standard" with title "Standard"
+
+accepted = Confirm "Create a small example file?" with title "Standard"
+
+If accepted is true:
+    Create folder "StandardData"
+    Write "Hello from Standard" to file "StandardData/example.txt"
+    Append "\nThis line was appended." to file "StandardData/example.txt"
+
+    saved = file exists at "StandardData/example.txt"
+
+    If saved is true:
+        contents = read text from file "StandardData/example.txt"
+        Copy contents to clipboard
+        Prompt "The file was created and its text was copied to your clipboard." with title "Done"
+    End
+End
+
+folder = current folder
+today = current date
+Print "Current folder: {folder}" to console
+Print "Current date: {today}" to console

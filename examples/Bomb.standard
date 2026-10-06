@@ -1,0 +1,10 @@
+Set bomb_timer to 0
+
+If bomb_timer is 0:
+    Wait 1 second
+    Explodes
+End
+
+Function Explodes:
+    Print "#boom!" to console
+End

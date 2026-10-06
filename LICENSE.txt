@@ -1,0 +1,105 @@
+STANDARD LANGUAGE SOFTWARE LICENSE AGREEMENT
+Binary Distribution License — License Revision 1.0
+
+Copyright © 2026 Wildclaw Interactive. All rights reserved.
+
+For this Agreement, "Licensor" means Wildclaw Interactive.
+
+IMPORTANT: This is a proprietary binary-use license. Standard is not released as open-source software under this license.
+
+1. DEFINITIONS
+
+"Standard Software" means the official binary distributions of Standard Studio, the Standard compiler, Standard CLI, Standard SDK/toolchain, Standard-owned runtime components, official installers, official documentation, and related Standard-owned binary assets distributed by the Licensor.
+
+"Your Application" means software, games, tools, websites, services, libraries, or other works that you create using Standard.
+
+"Redistributable Components" means only the Standard-owned components expressly identified as redistributable in the file REDISTRIBUTABLES.txt supplied with an official Standard release.
+
+2. LICENSE GRANT
+
+Subject to this Agreement, the Licensor grants you a non-exclusive, worldwide, royalty-free, non-transferable license to:
+
+(a) install and use the Standard Software for personal, educational, internal, or commercial development;
+(b) use Standard to create, compile, test, and build Your Applications;
+(c) sell, license, publish, distribute, and commercially exploit Your Applications without owing royalties to the Licensor solely because they were created with Standard; and
+(d) make reasonable copies of the Standard Software solely for your own internal use, including use by employees or contractors acting on behalf of the same person or legal entity and subject to this Agreement.
+
+3. YOUR CODE AND YOUR APPLICATIONS
+
+The Licensor does not claim ownership of source code, assets, content, or applications that you independently create merely because you used Standard to create or compile them.
+
+You may distribute Your Applications commercially or non-commercially.
+
+When Standard-generated executable or object code contains Standard-generated helper/runtime code, you may redistribute that compiled code solely as an integrated part of Your Application, subject to this Agreement and REDISTRIBUTABLES.txt.
+
+4. REDISTRIBUTABLE COMPONENTS
+
+You may redistribute only Redistributable Components identified in REDISTRIBUTABLES.txt, and only:
+
+(a) in unmodified form;
+(b) as necessary to run Your Application;
+(c) as part of, or alongside, Your Application rather than as a standalone Standard distribution; and
+(d) with all legally required copyright, license, and third-party notices preserved.
+
+No other portion of the Standard Software is redistributable unless the Licensor gives you separate written permission.
+
+5. RESTRICTIONS
+
+Except where applicable law expressly requires otherwise, you may not:
+
+(a) redistribute, re-upload, mirror, host, sell, sublicense, rent, lease, or commercially provide the Standard Studio installer, Standard compiler, Standard CLI, Standard SDK/toolchain, or another complete or substantially complete copy of the Standard Software;
+(b) present a modified, repackaged, or copied Standard distribution as your own product;
+(c) remove, obscure, or alter copyright, license, attribution, trademark, or proprietary notices;
+(d) reverse engineer, decompile, disassemble, or otherwise attempt to obtain the source code of non-source Standard Software, except to the limited extent such a restriction is prohibited by applicable law;
+(e) modify the Standard Software or create derivative works of the Standard Software unless the Licensor has expressly authorized that modification in writing;
+(f) use the Standard name, Standard Studio name, official icons, logos, or branding in a way that falsely suggests that you own Standard, created the official Standard distribution, or are officially endorsed by the Licensor;
+(g) market another compiler, programming language, IDE, SDK, repackaged distribution, or substantially similar product as "Standard", "Standard Studio", or an official Standard product in a way likely to cause confusion about its source, ownership, or authorization; or
+(h) bypass technical restrictions intended to enforce this Agreement.
+
+You may link to the Licensor's official download or release page instead of redistributing the Standard Software.
+
+6. CLOSED SOURCE
+
+This Agreement grants rights to use official binary distributions only. It does not grant any right to receive, access, copy, publish, or redistribute Standard's private source code.
+
+If source code is separately supplied by the Licensor, that source code is governed by the separate terms supplied with it and not automatically by this binary-use license.
+
+7. STANDARD NAME, BRANDING, AND OWNERSHIP
+
+All rights, title, and interest in the Standard Software remain with the Licensor and its licensors.
+
+No ownership of the Standard Software, official Standard branding, or official Standard distribution is transferred to you.
+
+You may truthfully state that Your Application was "made with Standard", "built with Standard", or similar wording, provided that statement does not imply ownership of, sponsorship by, or endorsement from the Licensor.
+
+8. THIRD-PARTY SOFTWARE
+
+The Standard Software may include or depend upon third-party software. Third-party components remain governed by their own licenses. Nothing in this Agreement limits rights granted to you directly by those third-party licenses.
+
+See THIRD_PARTY_NOTICES.md and the notices included with the distributed binaries.
+
+9. UPDATES AND VERSIONS
+
+The Licensor may release updates under this Agreement or under revised license terms. Installing or using a release clearly distributed under revised terms may require acceptance of those revised terms.
+
+10. TERMINATION
+
+Your rights under this Agreement terminate automatically if you materially violate it and fail to cure the violation after notice where a cure is legally required. Upon termination, you must stop using and distributing the Standard Software, except that previously distributed lawful copies of Your Applications may continue to be used by their recipients unless applicable law requires otherwise.
+
+11. DISCLAIMER OF WARRANTY
+
+THE STANDARD SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+
+12. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR LOSS OF PROFITS, REVENUE, DATA, OR BUSINESS, ARISING FROM OR RELATED TO THE STANDARD SOFTWARE OR THIS AGREEMENT.
+
+13. SEVERABILITY
+
+If any provision of this Agreement is held unenforceable, the remaining provisions remain in effect to the maximum extent permitted by law.
+
+14. ENTIRE LICENSE
+
+This Agreement, together with REDISTRIBUTABLES.txt and any release-specific terms expressly incorporated by reference, states the license granted by the Licensor for the Standard Software.
+
+For permissions beyond this Agreement, obtain written permission from the Licensor.
