@@ -1,6 +1,6 @@
 # Projects
 
-> **Applies to:** Standard `0.1.0-alpha`
+> **Applies to:** Standard `0.1.2-alpha`
 
 A Standard project is a normal folder containing exactly one `.standardproject` manifest at its root.
 
@@ -43,6 +43,14 @@ The current alpha intentionally uses one shared project scope. That means helper
 
 The `Entry` file is the startup source for the project. The current bootstrap backend composes helper source before the entry source so project-visible helpers are available when startup code executes.
 
+For UI projects, put the startup interface in the entry source:
+
+```standard
+Show interface "MainWindow.standardui"
+```
+
+As a convenience, an `Auto` or `Desktop` project with exactly one `.standardui` file will auto-start that interface if the startup line is missing. This makes a newly created/simple UI project runnable by default. Projects with multiple UI files must explicitly choose the startup interface.
+
 ## CLI project discovery
 
 From inside a project folder:
@@ -65,3 +73,18 @@ The project hierarchy can create `.standard` files, `.standardui` files, and fol
 ## Current alpha limitation
 
 Some diagnostics from multi-file builds can still refer to composed-source line positions rather than the perfect original file/range. The lexer already records token source ranges; preserving file identity through every compilation stage is ongoing stabilization work.
+
+
+## Comments
+
+Project manifests use the same Standard comment style as source files:
+
+```standard
+Note: one-line project note
+
+Note:
+    Multi-line project documentation.
+End
+```
+
+Settings written inside a `Note:` block are ignored.

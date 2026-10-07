@@ -1,6 +1,6 @@
 # Command Line
 
-> **Applies to:** Standard `0.1.0-alpha`
+> **Applies to:** Standard `0.1.2-alpha`
 
 The Standard SDK includes `standard.exe`. Standard Studio also ships the CLI under its `Toolchain` folder.
 
@@ -81,7 +81,7 @@ standard version
 For this release the output is:
 
 ```text
-0.1.0-alpha
+0.1.2-alpha
 ```
 
 ## Project discovery

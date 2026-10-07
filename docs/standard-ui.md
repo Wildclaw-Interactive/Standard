@@ -1,6 +1,6 @@
 # Standard UI
 
-> **Applies to:** Standard `0.1.0-alpha`
+> **Applies to:** Standard `0.1.2-alpha`
 
 Standard UI is Standard's own UI description language and visual-designer model. Avalonia is the current rendering backend; Avalonia types are not part of Standard's public syntax.
 
@@ -261,3 +261,27 @@ The Browser is shown as a lightweight placeholder in the WPF bootstrap designer;
 - No reusable UI Components yet.
 - Standard Studio itself is still WPF; generated Standard UI apps use Avalonia.
 - Standard code now has a lexer/parser/AST and semantic-analysis frontend; code generation still uses the C#/.NET bootstrap backend.
+
+## Starting an interface
+
+A Standard UI is normally opened from project startup code:
+
+```standard
+Show interface "MainWindow.standardui"
+```
+
+Standard Studio and project composition provide a safety net for simple projects: when an `Auto` or `Desktop` project contains exactly one `.standardui` file and no startup interface is specified, Standard automatically starts that one interface. If a project contains multiple interfaces, use `Show interface` explicitly so startup is never ambiguous.
+
+
+## Comments
+
+`.standardui` files support the same comments as Standard source:
+
+```standard
+Note: one-line UI note
+
+Note:
+    Multi-line designer documentation.
+    Everything in this block is ignored.
+End
+```

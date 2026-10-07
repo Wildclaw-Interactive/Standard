@@ -1,6 +1,6 @@
 # Licensing and Distribution
 
-> **Applies to:** Standard `0.1.0-alpha`
+> **Applies to:** Standard `0.1.2-alpha`
 
 Standard is developed and distributed by **Wildclaw Interactive**. Public releases contain proprietary binaries, documentation, examples, and required third-party notices. The Standard compiler and Standard Studio implementation source are not published.
 
@@ -21,8 +21,8 @@ Link users to the official Wildclaw Interactive release location rather than red
 ## Official packages
 
 ```text
-Standard-Studio-0.1.0-alpha-win-x64.zip
-Standard-SDK-0.1.0-alpha-win-x64.zip
+Standard-Studio-0.1.2-alpha-win-x64.zip
+Standard-SDK-0.1.2-alpha-win-x64.zip
 ```
 
 - **Standard Studio** includes the IDE and Standard toolchain.

@@ -2,7 +2,7 @@
 
 A complete small Standard UI game with no handwritten C# or Avalonia code.
 
-Open this folder in Standard Studio 0.1.0-alpha and press **Run**, or from a terminal run:
+Open this folder in Standard Studio 0.1.2-alpha and press **Run**, or from a terminal run:
 
 ```text
 standard run TicTacToe.standardproject

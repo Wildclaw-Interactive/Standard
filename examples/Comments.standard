@@ -1,0 +1,11 @@
+Note: A one-line Standard comment.
+
+Note:
+    This is a multi-line Standard comment.
+    Everything until the matching End line is ignored.
+    Punctuation and code-looking text are safe here: @#$^&*{}
+    ignored_value = 999
+End
+
+message = "Comments are working"
+Print message to console

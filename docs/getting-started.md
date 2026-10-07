@@ -1,6 +1,6 @@
 # Getting Started
 
-> **Applies to:** Standard `0.1.0-alpha`
+> **Applies to:** Standard `0.1.2-alpha`
 
 This guide creates a small multi-file-capable Standard project using the CLI. The same project can also be opened in Standard Studio.
 
